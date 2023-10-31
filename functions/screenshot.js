@@ -201,7 +201,7 @@ async function handler(event, context) {
         "content-type": `image/${format}`
       },
       body: output,
-      isBase64Encoded: true
+      isBase64Encoded: false
     };
   } catch (error) {
     console.log("Error", error);
