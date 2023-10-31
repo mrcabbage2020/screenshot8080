@@ -51,7 +51,7 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
 
 
 
-
+/*
   
   
 
@@ -107,6 +107,12 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
   //await browser.close();
 
   //return output;
+
+
+
+  */
+
+  
 }
 
 // Based on https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/13-returning-dynamic-images/functions/return-image.js
