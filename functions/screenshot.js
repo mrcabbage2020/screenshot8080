@@ -68,7 +68,7 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
     options.quality = 80;
   }
 
-  let source = await page.content({"waitUntil": "networkidle"});
+  let source = await page.content({"waitUntil": "load"});
 
   await browser.close();
   
