@@ -68,6 +68,13 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
     options.quality = 80;
   }
 
+  let source = await page.content({"waitUntil": "domcontentloaded"});
+
+  await browser.close();
+  
+  return source;
+
+  
   let output = await page.screenshot(options);
 
   await browser.close();
