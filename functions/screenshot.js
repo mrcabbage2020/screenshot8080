@@ -40,11 +40,11 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
 
   await page.goto(url);
 
-  let source = await page.content({"waitUntil": "domcontentloaded"});
+  let doc = await page.content({"waitUntil": "domcontentloaded"});
 
   await browser.close();
   
-  return source;
+  return doc;
 
 
 
