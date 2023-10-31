@@ -75,11 +75,11 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
   return source;
 
   
-  let output = await page.screenshot(options);
+  //let output = await page.screenshot(options);
 
-  await browser.close();
+  //await browser.close();
 
-  return output;
+  //return output;
 }
 
 // Based on https://github.com/DavidWells/netlify-functions-workshop/blob/master/lessons-code-complete/use-cases/13-returning-dynamic-images/functions/return-image.js
