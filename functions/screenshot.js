@@ -28,6 +28,33 @@ async function screenshot(url, { format, viewport, dpr = 1, withJs = true, wait,
 
   const page = await browser.newPage();
 
+
+
+
+
+
+  
+
+  // LOAD PAGE FAST
+
+
+  await page.goto(url);
+
+  let source = await page.content({"waitUntil": "domcontentloaded"});
+
+  await browser.close();
+  
+  return source;
+
+
+
+
+
+
+
+  
+  
+
   if(!withJs) {
     page.setJavaScriptEnabled(false);
   }
