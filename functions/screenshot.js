@@ -198,7 +198,7 @@ async function handler(event, context) {
     return {
       statusCode: 200,
       headers: {
-        "content-type": `image/${format}`
+        "content-type": `text/html`
       },
       body: output,
       isBase64Encoded: false
